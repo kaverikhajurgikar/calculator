@@ -1,0 +1,51 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px hsla(51, 64%, 98%, 0.934);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.calculator input {
+  grid-column: span 4;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.calculator button {
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #efeef4;
+  transition: background-color 0.3s ease;
+}
+
+.calculator button:hover {
+  background-color: #ecf5f5;
+}
